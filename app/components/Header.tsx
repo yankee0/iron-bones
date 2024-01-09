@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="navbar shadow-xl rounded-2xl">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl ">IRON BONES</a>
+        <a href="/" className="btn btn-ghost text-xl ">IRON BONES</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
