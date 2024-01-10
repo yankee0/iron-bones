@@ -40,7 +40,7 @@ const Header = () => {
           <input
             type="text"
             placeholder="Rechercher..."
-            className="input input-bordered w-24 md:w-auto"
+            className="input input-bordered w-24 md:w-auto hidden md:flex"
           />
         </div>
         <div className="dropdown dropdown-end">

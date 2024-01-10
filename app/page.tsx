@@ -99,7 +99,7 @@ const page = () => {
           <img
             src={"/hero.png"}
             alt="Image construction"
-            className="w-auto h-auto max-h-[400px] max-w-[400px] m-auto"
+            className="max-h-[400px] max-w-[400px] object-cover w-full  m-auto"
           />
         </div>
         <div className="flex items-center justify-center md:order-0">
@@ -112,12 +112,12 @@ const page = () => {
           </h1>
         </div>
       </section>
-      <div className="bg-gray-100 overflow-clip mb-10 ">
+      <div className="bg-gray-100 mb-10 ">
         <section className="container m-auto py-4">
           <h2 className="text-center text-4xl font-bold mb-3 text-gray-500">
             CATEGORIES
           </h2>
-          <div className="carousel gap-3 p-5">
+          <div className="carousel w-full gap-3 p-5">
             {categories.map((categorie) => {
               return (
                 <div className="carousel-item">
@@ -147,21 +147,21 @@ const page = () => {
             className="input input-bordered w-full mb-3"
           />
           <div className=" grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-            <select className="select select-bordered w-full max-w-xs">
+            <select className="select select-bordered w-full ">
               <option disabled selected>
                 Sélectionnez la catégorie
               </option>
               <option>Han Solo</option>
               <option>Greedo</option>
             </select>
-            <select className="select select-bordered w-full max-w-xs">
+            <select className="select select-bordered w-full ">
               <option disabled selected>
                 Sélectionnez le pays
               </option>
               <option>Han Solo</option>
               <option>Greedo</option>
             </select>
-            <select className="select select-bordered w-full max-w-xs">
+            <select className="select select-bordered w-full ">
               <option disabled selected>
                 Sélectionnez la région
               </option>
@@ -229,7 +229,7 @@ const page = () => {
           </div>
         </div>
         <hr className="mb-3" />
-        <div className="carousel gap-3 p-5">
+        <div className="carousel w-full gap-3 p-5">
           {partners.map((partner) => {
             return (
               <div key={partner.img} className="carousel-item">
@@ -281,7 +281,7 @@ const page = () => {
       </section>
 
       <hr className="mb-3" />
-      <div className="container m-auto text-center text-gray-400 font-light mb-10">
+      <section className="container m-auto text-center text-gray-400 font-light mb-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
         mollitia, molestiae quas vel sint commodi repudiandae consequuntur
         voluptatum laborum numquam blanditiis harum quisquam eius sed odit
@@ -289,7 +289,7 @@ const page = () => {
         accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
         molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
         officia aut! Impedit sit
-      </div>
+      </section>
 
       <Footer />
     </div>

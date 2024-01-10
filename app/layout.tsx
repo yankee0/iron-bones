@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white min-h-screen pt-3">{children}</body>
+      <body className="bg-white min-h-screen pt-3 scrollbar-thin scrollbar-thumb-primary scrollbar-track-gray-100">{children}</body>
     </html>
   );
 }
