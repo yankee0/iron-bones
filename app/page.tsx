@@ -148,21 +148,21 @@ const page = () => {
           />
           <div className=" grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             <select className="select select-bordered w-full ">
-              <option disabled selected>
+              <option disabled >
                 Sélectionnez la catégorie
               </option>
               <option>Han Solo</option>
               <option>Greedo</option>
             </select>
             <select className="select select-bordered w-full ">
-              <option disabled selected>
+              <option disabled >
                 Sélectionnez le pays
               </option>
               <option>Han Solo</option>
               <option>Greedo</option>
             </select>
             <select className="select select-bordered w-full ">
-              <option disabled selected>
+              <option disabled >
                 Sélectionnez la région
               </option>
               <option>Han Solo</option>
@@ -260,10 +260,10 @@ const page = () => {
 
       <section className="container m-auto overflow-clip mb-10">
         <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-          {freelancers.map((freelancer) => {
+          {freelancers.map((freelancer, index) => {
             return (
               <article
-                key={freelancer.job}
+                key={index}
                 className="border rounded-box p-3 flex flex-col items-center gap-3"
               >
                 <img
